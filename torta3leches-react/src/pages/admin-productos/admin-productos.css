@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #FFF5E1;
+    color: #5D4037;
+}
+
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-sidebar {
+    width: 250px;
+    background-color: #8B4513;
+    color: #FFF5E1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-brand {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #FFC0CB;
+    margin-bottom: 20px;
+}
+
+.sidebar-brand h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    margin-top: 10px;
+    color: #FFF5E1;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    color: #FFF5E1;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 600;
+    border-left: 4px solid transparent;
+}
+
+.sidebar-nav a .icon {
+    margin-right: 15px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+.sidebar-nav a:hover {
+    background-color: #6b3410;
+    border-left-color: #FFC0CB;
+}
+
+.sidebar-nav a.active {
+    background-color: #6b3410;
+    border-left-color: #FFC0CB;
+}
+
+/* ===== MAIN CONTENT ===== */
+.admin-main {
+    margin-left: 250px;
+    flex: 1;
+    padding: 20px 30px;
+    background-color: #FFF5E1;
+    min-height: 100vh;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #FFC0CB;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.admin-header h1 {
+    font-family: 'Pacifico', cursive;
+    color: #8B4513;
+    font-size: 28px;
+}
+
+.admin-user {
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(139,69,19,0.1);
+    font-weight: 600;
+    color: #5D4037;
+}
+
+/* ===== DASHBOARD ===== */
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.card-stat {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(139,69,19,0.1);
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    border-top: 4px solid #8B4513;
+}
+
+.card-stat h3 {
+    font-size: 16px;
+    color: #5D4037;
+    margin-bottom: 10px;
+}
+
+.card-stat p {
+    font-size: 36px;
+    font-weight: 700;
+    color: #8B4513;
+    margin: 0;
+}
+
+.dashboard-welcome {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(139,69,19,0.1);
+}
+
+.dashboard-welcome h2 {
+    font-family: 'Pacifico', cursive;
+    color: #8B4513;
+    margin-bottom: 15px;
+}
+
+.dashboard-welcome p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.admin-table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(139,69,19,0.1);
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    background-color: #8B4513;
+    color: #FFF5E1;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.admin-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0e6d3;
+    vertical-align: middle;
+}
+
+.admin-table tr:hover {
+    background-color: #FFF5E1;
+}
+
+.btn-accion {
+    padding: 5px 12px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 13px;
+}
+
+.btn-editar {
+    background-color: #FFC0CB;
+    color: #5D4037;
+}
+
+.btn-editar:hover {
+    background-color: #f5a0b0;
+}
+
+.btn-eliminar {
+    background-color: #a71c1c;
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background-color: #8a1515;
+}
+
+/* ===== FORMULARIO ADMIN ===== */
+.admin-form {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(139,69,19,0.1);
+    margin-top: 20px;
+}
+
+.admin-form .form-group {
+    margin-bottom: 18px;
+}
+
+.admin-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #5D4037;
+}
+
+.admin-form input, 
+.admin-form select, 
+.admin-form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 2px solid #FFC0CB;
+    border-radius: 20px;
+    background-color: #FFF5E1;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.3s;
+}
+
+.admin-form input:focus,
+.admin-form select:focus,
+.admin-form textarea:focus {
+    outline: none;
+    border-color: #8B4513;
+    box-shadow: 0 0 0 3px rgba(139,69,19,0.15);
+}
+
+.admin-form .error-msg {
+    color: #a71c1c;
+    font-size: 12px;
+    min-height: 18px;
+    display: block;
+}
+
+.admin-form .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.admin-form .form-row .form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.btn-submit {
+    background-color: #8B4513;
+    color: #FFF5E1;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #6b3410;
+    transform: translateY(-2px);
+}
+
+.btn-submit:disabled {
+    background-color: #B0BEC5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .admin-sidebar {
+        width: 80px;
+        padding: 10px 0;
+    }
+    .sidebar-brand h3, .sidebar-nav a span:not(.icon) {
+        display: none;
+    }
+    .sidebar-nav a {
+        justify-content: center;
+        padding: 15px 0;
+    }
+    .sidebar-nav a .icon {
+        margin-right: 0;
+        font-size: 24px;
+    }
+    .admin-main {
+        margin-left: 80px;
+        padding: 15px;
+    }
+    .dashboard-cards {
+        flex-direction: column;
+    }
+    .admin-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .admin-form .form-row {
+        flex-direction: column;
+    }
+}
