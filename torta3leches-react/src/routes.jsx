@@ -51,7 +51,7 @@ export const routes = createBrowserRouter([
         element: <IniciarSesion/>
     },
     {
-        path: '/inicio',
+        path: '/',
         element: <Inicio/>
     },
     {
