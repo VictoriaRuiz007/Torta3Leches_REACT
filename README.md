@@ -2,8 +2,7 @@
 Proyecto de pasteleria mil sabores pasado a react. Fullstack 2, año 2026
 
 ### Tareas a realizar:
-- Pasar HTML+JS => jsx
-
-- Actualizar rutas de imagenes
-
-- SI QUEDA TIEMPO: actualizar productos por diseños originales
+- Revisar funcionalidad paginas admin
+- arreglar importacion de assets/img
+- crear detalle de blogs
+- agregar tests
