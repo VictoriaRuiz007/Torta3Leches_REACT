@@ -20,8 +20,8 @@ export default function App() {
         <Routes>
           <Route path='/' element = {<Inicio/>}/>
           <Route path='/admin' element = {<Admin/>}/>
-          <Route path='/admin-productos' element = {<AdminProductos/>}/>
-          <Route path='/admin-usuarios' element = {<AdminUsuarios/>}/>
+          <Route path='/admin/productos' element = {<AdminProductos/>}/>
+          <Route path='/admin/usuarios' element = {<AdminUsuarios/>}/>
           <Route path='/blogs' element = {<Blogs/>}/>
           <Route path='/blogs-detalles' element = {<BlogsDetalles/>}/>
           <Route path='/carrito' element = {<Carrito/>}/>

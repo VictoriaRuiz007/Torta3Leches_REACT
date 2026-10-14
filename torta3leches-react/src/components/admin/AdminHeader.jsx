@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../../assets/img/logo.png';
+import styles from '../../styles/adminGlobal.module.css';
 
 export default function AdminHeader() {
   const navigate = useNavigate();

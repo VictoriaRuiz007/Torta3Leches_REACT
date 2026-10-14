@@ -111,6 +111,12 @@ body {
     color: #5D4037;
 }
 
+.admin-footer {
+  text-align: right;
+  padding: 15px 20px;
+  width: 100%;
+}
+
 /* ===== DASHBOARD ===== */
 .dashboard-cards {
     display: flex;
