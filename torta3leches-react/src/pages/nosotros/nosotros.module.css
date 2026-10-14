@@ -1,0 +1,127 @@
+/* ===== PÁGINA NOSOTROS ===== */
+.nosotros-main {
+    background-color: #FFF5E1;
+    min-height: calc(100vh - 160px);
+    padding: 40px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nosotros-container {
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+
+.nosotros-titulo {
+    font-family: 'Pacifico', cursive;
+    color: #8B4513;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.nosotros-subtitulo {
+    font-family: 'Lato', sans-serif;
+    color: #5D4037;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.equipo-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.miembro {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.15);
+    transition: all 0.3s ease;
+    border-top: 4px solid #FFC0CB;
+}
+
+.miembro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.25);
+}
+
+.miembro h3 {
+    font-family: 'Pacifico', cursive;
+    color: #8B4513;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.miembro p {
+    font-family: 'Lato', sans-serif;
+    color: #5D4037;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-mv {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.15);
+    border-left: 4px solid #8B4513;
+    text-align: left;
+}
+
+.card-mv h4 {
+    font-family: 'Lato', sans-serif;
+    color: #8B4513;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card-mv p {
+    font-family: 'Lato', sans-serif;
+    color: #5D4037;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .equipo-container, .mision-vision {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .miembro, .card-mv {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .header {
+        padding: 10px 20px;
+    }
+    
+    .footer {
+        padding: 20px;
+    }
+    
+    main {
+        padding: 20px;
+    }
+}

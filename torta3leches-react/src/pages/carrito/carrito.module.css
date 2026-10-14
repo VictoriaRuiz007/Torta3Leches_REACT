@@ -1,0 +1,181 @@
+/* ===== CONTENEDOR Y TÍTULO ===== */
+.carritoMain {
+  background-color: #FFF5E1;
+  min-height: calc(100vh - 160px);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.carritoTitulo {
+  font-family: 'Pacifico', cursive;
+  color: #8B4513;
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.carritoContainer {
+  width: 100%;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(139, 69, 19, 0.15);
+  box-sizing: border-box;
+}
+
+/* ===== TABLA ===== */
+.tablaWrapper {
+  overflow-x: auto;
+}
+
+.tablaCarrito {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Lato', sans-serif;
+}
+
+.tablaCarrito th {
+  padding: 14px 10px;
+  color: #8B4513;
+  border-bottom: 2px solid #FFC0CB;
+  text-align: left;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.tablaCarrito td {
+  padding: 14px 10px;
+  color: #5D4037;
+  border-bottom: 1px solid #FFE1E1;
+  font-size: 14px;
+}
+
+.nombreProducto {
+  font-weight: 600;
+}
+
+.subtotalProducto {
+  color: #8B4513;
+  font-weight: 700;
+}
+
+.carritoVacio {
+  text-align: center;
+  padding: 30px 10px;
+  color: #5D4037;
+  font-size: 16px;
+}
+
+/* ===== BOTONES DE CANTIDAD Y ACCIONES ===== */
+.btnCantidad {
+  padding: 2px 9px;
+  border-radius: 50%;
+  border: 1px solid #a71c1c;
+  background: white;
+  color: #a71c1c;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.btnCantidad:hover {
+  background-color: #a71c1c;
+  color: white;
+}
+
+.btnEliminar {
+  background-color: #a71c1c;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.btnEliminar:hover {
+  background-color: #831414;
+  transform: translateY(-1px);
+}
+
+/* ===== RESUMEN Y ACCIONES FINALIZAR ===== */
+.resumenContainer {
+  text-align: right;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #FFC0CB;
+  font-family: 'Lato', sans-serif;
+}
+
+.totalTexto {
+  color: #8B4513;
+  font-size: 24px;
+  margin: 0 0 15px 0;
+}
+
+.accionesBox {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.btnAccion {
+  width: auto;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnVaciar {
+  background-color: #8B4513;
+  color: #FFF5E1;
+  border: 2px solid #8B4513;
+}
+
+.btnVaciar:hover {
+  background-color: #FFF5E1;
+  color: #8B4513;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(139, 69, 19, 0.3);
+}
+
+.btnComprar {
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #4CAF50;
+}
+
+.btnComprar:hover {
+  background-color: #388E3C;
+  border-color: #388E3C;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .accionesBox {
+    flex-direction: column;
+  }
+
+  .btnAccion {
+    width: 100%;
+  }
+
+  .carritoContainer {
+    padding: 20px 15px;
+  }
+}

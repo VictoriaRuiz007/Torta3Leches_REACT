@@ -12,14 +12,10 @@ import DetalleProducto from './pages/detalle-producto/detalle-producto'
 import IniciarSesion from './pages/iniciar-sesion/iniciar-sesion'
 import Nosotros from './pages/nosotros/nosotros'
 import Registro from './pages/registro/registro'
-import Header from './components/Header'
-import Footer from './components/Footer'
 
 
 export default function App() {
   return (
-    <>
-    <Header/>
       <BrowserRouter>
         <Routes>
           <Route path='/' element = {<Inicio/>}/>
@@ -36,8 +32,6 @@ export default function App() {
           <Route path='/registro' element = {<Registro/>}/>
         </Routes>
       </BrowserRouter>
-      <Footer/>
-    </>
   )
 }
 

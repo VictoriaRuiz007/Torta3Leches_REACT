@@ -31,7 +31,7 @@ export const routes = createBrowserRouter([
         element: <Blogs/>
     },
     {
-        path: '/blogs-detalles',
+        path: '/blogs-detalles/:id',
         element: <BlogsDetalles/>
     },
     {
@@ -43,7 +43,7 @@ export const routes = createBrowserRouter([
         element: <Contacto/>
     },
     {
-        path: '/detalle-productos',
+        path: '/detalle-productos/:id',
         element: <DetalleProductos/>
     },
     {
