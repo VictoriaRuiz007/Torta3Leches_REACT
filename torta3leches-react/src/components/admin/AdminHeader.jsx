@@ -1,4 +1,5 @@
 import { NavLink, useNavigate } from 'react-router-dom';
+import logo from '../../assets/img/logo.png';
 
 export default function AdminHeader() {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export default function AdminHeader() {
     <aside className={styles['admin-sidebar']}>
       <div className={styles['sidebar-brand']}>
         <img 
-          src="/imagenes/Poké Comelones (1) (1).png" 
+          src={logo}
           alt="Logo PokéComelones" 
           style={{ height: '50px' }} 
         />

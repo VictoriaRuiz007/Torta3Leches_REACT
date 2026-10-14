@@ -2,6 +2,7 @@ import React from 'react'
 
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import logo from '../../assets/img/logo.png';
 
 export default function Header() {
   const navigate = useNavigate();
@@ -27,7 +28,7 @@ export default function Header() {
       <div className="logo">
         <Link to="/">
           <img
-            src="/imagenes/Poké Comelones (1) (1).png"
+            src={logo}
             alt="Logo PokéComelones"
             className="img-fluid"
           />
